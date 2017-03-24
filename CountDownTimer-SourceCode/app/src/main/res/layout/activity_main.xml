@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hellohasan.countdowntimer_sourcecode.MainActivity">
+
+
+    <TextView
+        android:id="@+id/countDownTimerTextView"
+        android:layout_width="334dp"
+        android:layout_height="96dp"
+        android:text="00:00:00"
+        android:gravity="center"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteY="169dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:text="Start Timer"
+        android:onClick="buttonAction"
+        android:layout_below="@+id/countDownTimerTextView"
+        android:layout_alignLeft="@+id/countDownTimerTextView"
+        android:layout_alignStart="@+id/countDownTimerTextView"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Timer"
+        android:onClick="buttonAction"
+        android:layout_below="@+id/countDownTimerTextView"
+        android:layout_toRightOf="@+id/startButton"
+        android:layout_toEndOf="@+id/startButton" />
+
+</RelativeLayout>
